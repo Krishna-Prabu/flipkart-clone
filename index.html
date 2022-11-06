@@ -1,0 +1,437 @@
+<html>
+    <head>
+        <title>Flipkart Design</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+        <link
+          href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+          rel="stylesheet"
+        />
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="bg-primary sticky-top">
+            <ul class="nav align-items-center">                
+                <li class="nav-item col-3 col-sm-1 offset-sm-1">
+                    <a href="" class="btn">
+                        <img src="./images/flipkart.png" class="img-style">
+                        <p class="m-0 img-styl">Explore <code>Plan</code></p>
+                    </a>
+                </li>
+                <li class="nav-item col-4 col-sm-5">
+                    <div class="input-group">         
+                                   
+                        <input type="text" class="form-control input-group-item" list="listone" placeholder="Search for the brands and products">                          
+                            <datalist id="listone">
+                                <option value="datalist-header"></option>
+                                <option value="Mens top wear">Mens top wear</option>
+                                <option value="Womens top wear">Womens top wear</option>
+                                <option value="Mobiles">Mobiles</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Offers">Offers</option>
+                                <option value="Others">Others</option>
+                            </datalist>   
+
+                        <button type="button" class="input-group-item btn btn-outline-light text-primary search"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg></button>                 
+                                                          
+                    </div>
+                </li>
+                <li class="nav-item col-3 col-sm-auto ms-3 me-3">               
+                        
+                            <button type="button" class="btn btn-light text-primary login" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Login</button> 
+                                <div class="offcanvas offcanvas-start" id="offcanvasExample">
+                                    <div class="offcanvas-header bg-primary">
+                                    <h5> FLIPKART USER LOGIN </h5>
+                                    <button class="btn btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasExample"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="mt-3">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" value="@email">
+                                        </div>
+                                        <div class="mt-3">
+                                            <label class="form-label">Password</label>
+                                            <input type="password" class="form-control" value="Password">
+                                        </div>
+                                        <div class="form-check form-switch mt-3 mb-3">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-label">I am not a Robot</label>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary" type="button">Submit</button> 
+                                        </div>
+                                        <div class="float-end">
+                                            <button type="button" data-bs-dismiss="offcanvas" class="btn btn-danger ">Close</button>
+                                        </div>
+                                    </div>
+                                </div>   
+                </li>
+                <li class="nav-item col-12 col-sm-3">
+                
+                    <div class="d-flex justify-content-between">    
+                        <a href="#" role="button" class="text-decoration-none text-light ms-3 "><strong>Become a Seller</strong></a>
+                
+                        <a href="#" class="text-decoration-none dropdown-toggle text-light" data-bs-toggle="dropdown"><strong>More</strong></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">Vegitables</li>
+                                <li class="dropdown-item">Grocery</li>
+                                <li class="dropdown-item">Electricals</li>
+                                <li class="dropdown-divider"><hr></li>
+                                <li class="dropdown-item">Others</li>
+                            </ul>                
+                        <a href="#" role="button" class="text-light text-decoration-none me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3 me-1" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                          </svg><strong>Cart</strong></a>
+                    </div>    
+                    
+                </li> 
+            </ul>
+        </div>
+        
+        <nav style="--bs-breadcrumb-divider: ''" class="text-center">
+
+            <ol class="breadcrumb d-flex justify-content-between col-sm-10 offset-sm-1"> 
+                <li class="breadcrumb-item">                    
+                        <img class="list-group-item" src="./images/offer.webp">
+                        <b>Top Offers</b>
+                       
+                </li>
+                <li class="breadcrumb-item">
+                        <a class="list-group-item" href="#"><img class="list-group-item" src="./images/grocery.webp">
+                        <b>Grocery</b></a>
+                    
+                </li>
+                <li class="breadcrumb-item">
+                    
+                        <a class="list-group-item" href="#"><img class="list-group-item" src="./images/phones.webp">
+                        <b>Mobiles</b></a>
+                    
+                </li>
+                <li class="breadcrumb-item">
+                    <div class="dropdown">
+                        <a class="list-group-item" href="#"><img class="list-group-item" src="./images/fations.webp">  
+                            <span class="dropdown-toggle" data-bs-toggle="dropdown" style="cursor: pointer"><b>Fations</b></span>                  
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">Fation 1</li>
+                                    <li class="dropdown-item">Fation 2</li>
+                                    <li class="dropdown-item">Fation 3</li>
+                                </ul>
+                        </a>
+                    </div>   
+                </li>
+
+                <li class="breadcrumb-item">
+                    
+                    <a class="list-group-item btn btn-sm" href="#"><img class="list-group-item" src="./images/electronics.webp">
+                        <span class="dropdown-toggle" data-bs-toggle="dropdown"><b>Electronics</b></span>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Electronics 1</li>
+                            <li class="dropdown-item">Electronics 2</li>
+                            <li class="dropdown-item">Electronics 3</li>
+                        </ul>
+                    </a>
+                    
+                </li>
+                <li class="breadcrumb-item">
+                    
+                        <a class="list-group-item btn btn-sm" href="#"><img class="list-group-item" src="./images/homes.webp">
+                        <b>Homes</b></a>
+                   
+                </li>
+                <li class="breadcrumb-item">
+                    
+                        <a class="list-group-item btn btn-sm" href="#"><img class="list-group-item" src="./images/appliations.webp">
+                        <b>Applications</b></a>
+                    
+                </li>
+                <li class="breadcrumb-item">
+                    
+                        <a class="list-group-item btn btn-sm" href="#"><img class="list-group-item" src="./images/travels.webp">
+                        <b>Travels</b></a>
+                    
+                </li>
+                <li class="breadcrumb-item">
+                    
+                        <a class="list-group-item btn btn-sm" href="#"><img class="list-group-item" src="./images/toys.webp">
+                        <b>Toys</b></a>
+                   
+                </li>
+                <li class="breadcrumb-item">
+                    
+                        <a class="list-group-item btn btn-sm" href="#"><img class="list-group-item" src="./images/wheelers.webp">
+                        <b>Wheelers</b></a>
+                    
+                </li>
+            </ol>
+        </nav>        
+        <div class="carousel slide" data-bs-ride="carousel" id="carouselItem">
+            <div class="carousel-inner position-relative">
+                <a href="#" class="carousel-item active">
+                    <img src="./images/carousel1.jpg" class="w-100">
+                </a>
+                <a href="#" class="carousel-item">
+                    <img src="./images/caraousel-item-2.webp" class=" w-100">
+                </a>
+                <a href="#" class="carousel-item">
+                    <img src="./images/carousel-11.webp" class=" w-100">
+                </a>
+                <a href="#" class="carousel-item">
+                    <img src="./images/carousel1.jpg" class=" w-100">
+                </a>
+            </div>
+            <button type="button" data-bs-target="#carouselItem" class="position-absolute btn btn-text-dark p-0 bottom-50 start-0 pt-3 pb-3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" data-bs-target="#carouselItem" class="carousel-control-next" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselItem" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carouselItem"  data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselItem"  data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselItem"  data-bs-slide-to="3"></button>                  
+            </div>
+        </div>  
+
+        <div class="d-flex justify-content-center mt-3 mb-3">
+            <img src="./images/caraousel-item-2.webp" class="w-50">        
+        </div>        
+        <div class="mt-5">
+                <div class="row mx-auto four-col-grid">
+                    <div class="col-6 col-sm-3">
+                        <a href="#c-item"> <img src="./images/containers.webp" ></a>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <a href="#"> <img src="./images/carousel-0.webp"  ></a>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <a href="#"><img src="./images/carousel-6.webp"></a>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <a href="#"> <img src="./images/carousel-0.webp" ></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="row align-items-center mx-auto">
+                    <div class="col-sm-1">
+                        <div class="text-center">
+                        <h4>TOP OFFERS</h4>
+                        <button type="button" class="btn btn-primary"><a class="text-light text-decoration-none" 
+                            href="https://www.flipkart.com/offers-list/top-offers?screen=dynamic&pk=themeViews%3DEvents-Topoffers%3ADeal-card~widgetType%3DdealCard~contentType%3Dneo&wid=5.dealCard.OMU_5&otracker=hp_omu_Top%2BOffers_5&otracker1=hp_omu_PINNED_neo%2Fmerchandising_Top%2BOffers_NA_wc_view-all_5">View All</a></button>
+                        </div>
+                    </div>                    
+                        <div class="col-sm-10 carousel slide" data-bs-ride="carousel" id="c-item">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-target="#c-item">
+                                    <div class="row mx-auto text-center">
+
+                                        <div class="col-6 col-sm-3 align-items-center">
+                                            <a href="" class="text-decoration-none"><img src="./images/car.webp" class="card-img-top change-img-style imgsty">
+                                            <div class="">
+                                                <h4>Cookers one</h4>
+                                                <h5 class="text-success">Min 6% offer</h5>
+                                                <h6 class="text-muted">Explore Now!</h6>
+                                            </div>
+                                            </a>
+                                        </div>                              
+                                    
+                                    
+                                        <div class="align-items-center col-6 col-sm-3">
+                                            <a href="" class="text-decoration-none"><img src="./images/cooker.webp" class="card-img-top change-img-style imgsty">
+                                            <div class="">
+                                                <h4>Cookers one</h4>
+                                                <h5 class="text-success">Min 6% offer</h5>
+                                                <h6 class="text-muted">Explore Now!</h6>
+                                            </div>
+                                            </a>
+                                        </div>                              
+                                    
+                                    
+                                        <div class="align-items-center col-6 col-sm-3" >
+                                            <a href="" class="text-decoration-none"><img src="./images/steels.webp" class=" change-img-style imgsty">
+                                            <div class="">
+                                                <h4>Cookers one</h4>
+                                                <h5 class="text-success">Min 6% offer</h5>
+                                                <h6 class="text-muted">Explore Now!</h6>
+                                            </div>
+                                            </a>
+                                        </div> 
+                                        <div class="align-items-center col-6 col-sm-3">
+                                            <a href="" class="text-decoration-none"><img src="./images/containers.webp" style="width: 100%" class="card-img-top change-img-style imgsty">
+                                            <div class="">
+                                                <h4>Cookers one </h4>
+                                                <h5 class="text-success">Min 6% offer</h5>
+                                                <h6 class="text-muted">Explore Now!</h6>
+                                            </div>
+                                            </a>
+                                        </div>   
+                                    </div> 
+                                </div>
+
+                                <div class="carousel-item" data-bs-target="#c-item">
+                                    <div class="row mx-auto text-center">
+                                        <div class="align-items-center col-6 col-sm-3">
+                                            <a href="" class="text-decoration-none"><img src="./images/carousel-3.jpeg" class="card-img-top change-img-style imgsty">
+                                            <div class="">
+                                                <h4>Cookers one</h4>
+                                                <h5 class="text-success">Min 6% offer</h5>
+                                                <h6 class="text-muted">Explore Now!</h6>
+                                            </div>
+                                            </a>
+                                        </div>                              
+                                    
+                                    
+                                        <div class="align-items-center col-6 col-sm-3">
+                                            <a href="#" class="text-decoration-none"><img src="./images/carousel-4.jpeg" class="card-img-top change-img-style imgsty">
+                                            <div class="">
+                                                <h4>Cookers one</h4>
+                                                <h5 class="text-success">Min 6% offer</h5>
+                                                <h6 class="text-muted">Explore Now!</h6>
+                                            </div>
+                                            </a>
+                                        </div>                              
+                                    
+                                    
+                                        <div class="align-items-center col-6 col-sm-3">
+                                            <a href="" class="text-decoration-none"><img src="./images/carousel-5.jpeg" class="card-img-top change-img-style imgsty">
+                                            <div class="">
+                                                <h4>Cookers one</h4>
+                                                <h5 class="text-success">Min 6% offer</h5>
+                                                <h6 class="text-muted">Explore Now!</h6>
+                                            </div>
+                                            </a>
+                                        </div> 
+                                        <div class="align-items-center col-6 col-sm-3">
+                                            <a href="" class="text-decoration-none"><img src="./images/carousel-6.webp" class="card-img-top change-img-style imgsty">
+                                            <div class="">
+                                                <h4>Cookers one </h4>
+                                                <h5 class="text-success">Min 6% offer</h5>
+                                                <h6 class="text-muted">Explore Now!</h6>
+                                            </div>
+                                            </a>
+                                        </div>   
+                                    </div> 
+                                </div>
+                            </div>
+                            <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#c-item"><span class="carousel-control-prev-icon"></span></button>
+                            <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#c-item">  </button>
+                        </div>                           
+                    
+                    <div class=" col-4 offset-4 col-sm-1 offset-sm-0"> 
+                        <div class="justify-content-center">
+                            <img src="./images/caraousel-col-3.webp" style="width: 100%">       
+                        </div>           
+                    </div>
+                </div>
+            </div>            
+        </div>     
+        <div class="bg-secondary p-3 mt-3 text-light">
+            <div class="row  justify-content-between">
+                <div class="col-3 col-md-auto">
+                    <dl>
+                        <dt class="text-info">About</dt>
+                        <dd> Contact Us</dd>
+                        <dd>About Us</dd>
+                        <dd> Flipkart Stories</dd>
+                        <dd> Press</dd>
+                        <dd> Flipkart Wholesale</dd>
+                        <dd>Corporate Information</dd>
+                    </dl>
+                </div>
+                <div class="col-3 col-md-auto">
+                    <dl>
+                        <dt  class="text-info">Help</dt>
+                        <dd>Payments</dd>
+                        <dd>Shipping</dd>
+                        <dd>Cancellation & Returns</dd>
+                        <dd>FAQ</dd>
+                        <dd>Report Infringement</dd>
+                        <dd>More</dd>
+                    </dl>
+                </div>
+                <div class="col-3 col-md-auto">
+                    <dl>
+                        <dt class="text-info">Shipping</dt>
+                        <dd>Cancellation & Returns</dd>
+                        <dd>FAQ</dd>
+                        <dd>Report Infringement</dd>
+                        <dd>POLICY</dd>
+                        <dd>Return Policy</dd>
+                        <dd>Terms of Use</dd>
+                        <dd>Security</dd>
+                        <dd>Privacy</dd>
+                        <dd>Sitemap</dd>
+                        <dd>EPR Compliance</dd>
+                    </dl>
+                </div>
+                <div class="col-3 col-md-auto">
+                    <dl>
+                        <dt class="text-info">Social</dt>
+                        <dd>Facebook</dd>
+                        <dd>Twitter</dd>
+                        <dd>Youtube</dd>
+                    </dl>
+                </div>
+                
+                <div class="col-6 col-md-2">
+                    <dl>
+                        <dt class="text-info">Mail Us:</dt>
+                        Flipkart Internet Private Limited,
+
+                        Buildings Alyssa, Begonia &
+
+                        Clove Embassy Tech Village,
+
+                        Outer Ring Road, Devarabeesanahalli Village,
+
+                        Bengaluru, 560103,
+
+                        Karnataka, India
+                    </dl>             
+                
+                </div>
+                <div class="col-6 col-md-2">
+                    <dl>
+                        <dt class="text-info">Registered Office Address:</dt>
+                            Flipkart Internet Private Limited,
+
+                            Buildings Alyssa, Begonia &
+
+                            Clove Embassy Tech Village,
+
+                            Outer Ring Road, Devarabeesanahalli Village,
+
+                            Bengaluru, 560103,
+
+                            Karnataka, India
+
+                            CIN : U51109KA2012PTC066107
+
+                            Telephone: <span class="text-warning"> 044-45614700</span>
+                    </dl>
+                </div>
+            </div>
+            <hr class="">
+            <div class="list-group-horizontal text-light" >                                  
+                <button type="button" class="btn text-light">Become a Seller</button>                
+                
+                <button type="button" class="btn text-light">Advertiser</button>
+                <button type="button" class="btn text-light">Gift Cards</button>
+                <button type="button" class="btn text-light">Help Center</button>
+                <button type="button" class="btn text-light">@ 2007-2022 Flipkart.com</button>
+            </div>
+        </div> 
+        
+
+    </body>
+</html>
